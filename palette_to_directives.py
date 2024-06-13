@@ -23,7 +23,7 @@ def main():
             rgb = line.split()[:3]
             row.extend(rgb)
             if len(row) == 3*8:
-                f.write(" " * 8 + "dc.l " + ",".join(row) + "\n")
+                f.write(" " * 8 + "dc.b " + ",".join(row) + "\n")
                 row = []
 
 if __name__ == "__main__":
